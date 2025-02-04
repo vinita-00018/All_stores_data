@@ -1,6 +1,0 @@
-category,Event,Customer_IP,Event_Time,Product_ID,Quantity,Collection_Name,Search_Term,Time_On_Page,Product_Name,session
-Engagement,Home,108.248.229.53,2025-01-24 09:01:00.516000+00:00,,,,,4.285,,1
-Engagement,Collection,108.248.229.53,2025-01-24 09:01:48.451000+00:00,,,test-rack,,47.173,,1
-Engagement,Home,68.52.132.50,2025-01-24 12:23:25.402000+00:00,,,,,1.428,,1
-Engagement,Collection,68.52.132.50,2025-01-24 12:23:34.539000+00:00,,,test-rack,,8.664,,1
-Engagement,Home,68.52.132.50,2025-01-24 12:23:49.724000+00:00,,,,,24.487,,1
