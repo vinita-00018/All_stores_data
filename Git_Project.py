@@ -3,7 +3,8 @@ import os
 
 try:
     folder_path = "D:\\Vinita\\Project\\Final_Project_Streamlit"
-    repository_url = "https://github.com//vinita-00018//All_stores_data.git"
+    # repository_url = "https://github.com//vinita-00018//All_stores_data.git"
+    repository_url = "https://github.com/vinita-00018/All_stores_data.git"
 
     os.chdir(folder_path)
 
