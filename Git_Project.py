@@ -65,12 +65,15 @@ try:
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         print("Changes committed.")
 
+    # Pull latest changes from remote before pushing
+    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+
     # Push changes to GitHub
     subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
-    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
     print("Folder has been successfully pushed to GitHub!")
 
 except subprocess.CalledProcessError as e:
     print(f"Git command failed: {e}")
 except Exception as e:
     print(f"An error occurred: {e}")
+
