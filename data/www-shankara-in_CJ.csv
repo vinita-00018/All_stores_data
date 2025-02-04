@@ -1,0 +1,363 @@
+category,Event,Customer_IP,Event_Time,Product_ID,Quantity,Collection_Name,Search_Term,Time_On_Page,Product_Name,session
+Engagement,Collection,1.39.135.57,2025-01-25 13:28:08.203000+00:00,,,hair-and-facial-tools,,13.704,,1
+Engagement,Cart Add,103.143.147.231,2025-01-25 06:15:47.512000+00:00,7345030725699,1,,,,geranium essential oil deodorant,1
+Engagement,Product,103.143.147.231,2025-01-25 06:15:47.718000+00:00,1725779607619,,,,11.259,geranium essential oil deodorant,1
+Engagement,Product,103.143.147.231,2025-01-25 06:17:23.806000+00:00,1725639852099,,,,94.881,lavender essential oil deodorant,1
+Engagement,Product,103.143.147.231,2025-01-25 06:20:06.846000+00:00,6740928102467,,,,3.171,timeless moisturizer,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:22:58.729000+00:00,,,body-care,,4.274,,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:23:02.692000+00:00,,,body-care,,0.399,,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:23:49.172000+00:00,,,body-care,,40.302,,1
+Engagement,Product,103.143.147.231,2025-01-25 06:24:42.359000+00:00,7009802158147,,,,51.436,rejuvenating body mist,1
+Engagement,Cart Add,103.143.147.231,2025-01-25 06:24:57.220000+00:00,6740928102467,1,,,,Timeless Moisturizer,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:25:06.302000+00:00,,,body-care,,22.698,,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:25:18.884000+00:00,,,body-care,,11.376,,1
+Engagement,Collection,103.143.147.231,2025-01-25 06:28:13.489000+00:00,,,face-cleansers,,22.39,,1
+Engagement,Cart,103.143.147.231,2025-01-25 06:34:47.274000+00:00,,,,,275.018,,1
+Engagement,Cart Remove,103.143.147.231,2025-01-25 06:37:27.619000+00:00,6740928102467,,,,,Timeless Moisturizer,1
+Engagement,Home,103.143.147.231,2025-01-25 06:41:11.936000+00:00,,,,,11.749,,1
+Engagement,Home,103.143.147.235,2025-01-26 16:01:11.662000+00:00,,,,,7.424,,1
+Engagement,Product,103.163.248.80,2025-01-26 08:26:51.208000+00:00,4362652549187,,,,5.956,kumkumadi oil,1
+Engagement,Product,103.163.248.80,2025-01-26 08:26:52.835000+00:00,4362652549187,,,,1.975,kumkumadi oil,1
+Engagement,Product,103.207.57.200,2025-01-27 07:43:30.727000+00:00,4362652549187,,,,2.867,kumkumadi oil,1
+Engagement,Home,103.21.127.10,2025-01-27 05:10:56.286000+00:00,,,,,33.691,,1
+Engagement,Cart Add,103.21.127.10,2025-01-27 05:10:56.425000+00:00,4362652549187,1,,,,Kumkumadi Oil,1
+Engagement,Home,103.21.127.10,2025-01-27 05:11:37.121000+00:00,,,,,40.838,,1
+Engagement,Home,103.21.127.10,2025-01-27 05:12:10.957000+00:00,,,,,33.835,,1
+Engagement,Collection,103.233.219.74,2025-01-25 07:40:17.776000+00:00,,,best-sellers,,4.938,,1
+Engagement,Product,103.254.245.114,2025-01-27 07:54:59.433000+00:00,4362652549187,,,,8.593,kumkumadi oil,1
+Engagement,Product,103.254.245.114,2025-01-27 07:55:00.609000+00:00,4362652549187,,,,1.667,kumkumadi oil,1
+Engagement,Collection,104.28.103.81,2025-01-26 23:43:02.072000+00:00,,,gheesutra-collection,,12.949,,1
+Engagement,Collection,104.28.103.81,2025-01-26 23:43:19.040000+00:00,,,gheesutra-collection,,17.091,,1
+Engagement,Collection,104.28.103.81,2025-01-26 23:47:30.730000+00:00,,,gheesutra-collection,,251.699,,1
+Engagement,Collection,106.196.25.178,2025-01-27 05:41:18.906000+00:00,,,face-care,,18.991,,1
+Engagement,Cart Add,106.196.25.178,2025-01-27 07:01:49.160000+00:00,7341049446467,1,,,,Gheesutrā Body Butter,2
+Engagement,Cart Remove,106.196.25.178,2025-01-27 07:02:20.986000+00:00,4362652549187,,,,,Kumkumadi Oil,2
+Engagement,Collection,106.196.25.178,2025-01-27 07:02:20.998000+00:00,,,anti-ageing,,69.636,,2
+Engagement,Product,106.196.25.178,2025-01-27 07:02:36.161000+00:00,6740928102467,,,,14.021,timeless moisturizer,2
+Engagement,Cart Add,106.196.25.178,2025-01-27 07:03:04.224000+00:00,6740928102467,1,,,,timeless moisturizer,2
+Engagement,Cart Remove,106.196.25.178,2025-01-27 07:03:18.245000+00:00,6740928102467,,,,,timeless moisturizer,2
+Engagement,Cart Remove,106.196.25.178,2025-01-27 07:03:39.518000+00:00,6740928102467,,,,,timeless moisturizer,2
+Engagement,Collection,106.196.9.133,2025-01-25 07:38:07.863000+00:00,,,hair-care,,82.127,,1
+Engagement,Cart Add,106.196.9.133,2025-01-25 07:38:18.733000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Collection,106.196.9.133,2025-01-25 07:59:33.827000+00:00,,,aromatherapy,,9.51,,1
+Engagement,Collection,106.215.176.250,2025-01-25 19:08:07.005000+00:00,,,gheesutra-collection,,6.351,,1
+Engagement,Collection,106.215.176.250,2025-01-25 19:09:18.770000+00:00,,,gheesutra-collection,,5.242,,1
+Engagement,Collection,106.219.155.46,2025-01-25 15:32:12.810000+00:00,,,hair-care,,28.874,,1
+Engagement,Home,106.219.158.142,2025-01-25 17:49:50.181000+00:00,,,,,0.265,,1
+Engagement,Collection,106.219.161.129,2025-01-25 17:48:27.705000+00:00,,,shankara-minis,,259.753,,1
+Engagement,Collection,106.219.167.5,2025-01-26 14:18:47.094000+00:00,,,gheesutra-collection,,57.948,,1
+Engagement,Collection,106.219.167.5,2025-01-26 14:20:12.438000+00:00,,,gheesutra-collection,,85.711,,1
+Engagement,Collection,106.221.207.228,2025-01-25 05:07:00.481000+00:00,,,best-sellers,,15.105,,1
+Engagement,Cart Add,106.222.225.130,2025-01-25 07:49:21.300000+00:00,6732292685891,1,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Cart Add,106.222.225.130,2025-01-25 07:51:12.249000+00:00,7192798527555,1,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Cart Remove,106.222.225.130,2025-01-25 07:51:16.790000+00:00,7192798527555,,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Cart Remove,106.222.225.130,2025-01-25 07:51:20.015000+00:00,6919629996099,,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Cart Remove,106.222.225.130,2025-01-25 07:51:57.377000+00:00,2133026013251,,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Cart Add,106.222.225.130,2025-01-25 07:52:01.716000+00:00,7192798527555,1,,,,gheesutra face emulsion hand foot cream,1
+Engagement,Collection,106.51.148.7,2025-01-24 16:09:30.089000+00:00,,,best-sellers,,6.213,,1
+Engagement,Home,106.51.192.12,2025-01-25 11:15:36.697000+00:00,,,,,0.113,,1
+Engagement,Collection,108.30.48.228,2025-01-25 19:50:34.751000+00:00,,,best-sellers,,50.734,,1
+Engagement,Cart Add,108.30.48.228,2025-01-25 19:51:27.784000+00:00,6798650638403,1,,,,Gheesutrā Face Emulsion,1
+Engagement,Cart Update,108.30.48.228,2025-01-26 13:12:56.760000+00:00,6798650638403,1,,,,timeless moisturizer,2
+Engagement,Cart Add,108.30.48.228,2025-01-26 16:19:06.672000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,3
+Engagement,Home,108.30.48.228,2025-01-26 16:19:06.752000+00:00,,,,,17.851,,3
+Engagement,Home,108.30.48.228,2025-01-26 16:19:11.897000+00:00,,,,,2.51,,3
+Engagement,Collection,108.30.48.228,2025-01-26 16:20:25.597000+00:00,,,best-sellers,,11338.325,,3
+Engagement,Collection,108.30.48.228,2025-01-26 20:25:29.380000+00:00,,,best-sellers,,3.104,,4
+Engagement,Home,108.30.48.228,2025-01-26 20:27:49.254000+00:00,,,,,29.093,,4
+Engagement,Home,108.30.48.228,2025-01-26 20:37:18.443000+00:00,,,,,2.875,,4
+Engagement,Home,108.30.48.228,2025-01-26 21:09:01.239000+00:00,,,,,9.223,,4
+Engagement,Cart Remove,108.30.48.228,2025-01-26 21:09:34.629000+00:00,6740928102467,,,,,Timeless Moisturizer,4
+Engagement,Cart Remove,108.30.48.228,2025-01-26 21:09:35.601000+00:00,6919629996099,,,,,Free Gheesutrā Ritual Collection,4
+Engagement,Cart Update,108.30.48.228,2025-01-26 21:09:35.601000+00:00,6798650638403,-1,,,,Gheesutrā Face Emulsion,4
+Engagement,Cart Remove,108.30.48.228,2025-01-26 21:09:37.826000+00:00,6798650638403,,,,,Gheesutrā Face Emulsion,4
+Engagement,Home,108.30.48.228,2025-01-26 21:09:40.522000+00:00,,,,,27.011,,4
+Engagement,Home,108.30.48.228,2025-01-26 21:09:54.252000+00:00,,,,,5.421,,4
+Engagement,Home,108.30.48.228,2025-01-26 21:16:09.632000+00:00,,,,,20.991,,4
+Engagement,Home,108.30.48.228,2025-01-26 21:25:25.105000+00:00,,,,,5.125,,4
+Engagement,Product,110.224.110.120,2025-01-24 19:01:27.662000+00:00,4362652549187,,,,9.039,kumkumadi oil,1
+Engagement,Product,111.93.149.154,2025-01-25 11:03:11.233000+00:00,6895610134595,,,,38.85,gheesutra hand and foot cream,1
+Engagement,Collection,118.185.140.218,2025-01-25 06:22:24.635000+00:00,,,gheesutra-collection,,68.15,,1
+Engagement,Collection,118.185.140.218,2025-01-25 06:22:35.521000+00:00,,,gheesutra-collection,,11.269,,1
+Engagement,Collection,122.161.48.71,2025-01-26 15:41:09.579000+00:00,,,pitta,,7.985,,1
+Engagement,Home,122.161.48.71,2025-01-26 19:16:55.509000+00:00,,,,,414.324,,2
+Engagement,Collection,122.161.48.71,2025-01-26 19:17:34.182000+00:00,,,gheesutra-collection,,33.807,,2
+Engagement,Product,122.167.197.199,2025-01-25 05:01:01.156000+00:00,4362652549187,,,,6.379,kumkumadi oil,1
+Engagement,Cart Add,122.171.18.80,2025-01-25 16:33:50.276000+00:00,12088221907,1,,,,Anti Age Serum,1
+Engagement,Cart Remove,122.171.18.80,2025-01-25 16:33:50.276000+00:00,4362652549187,,,,,Kumkumadi Oil,1
+Engagement,Collection,122.171.18.80,2025-01-25 16:33:50.333000+00:00,,,vata,,28.682,,1
+Engagement,Product,122.176.198.148,2025-01-24 10:38:55.566000+00:00,4362652549187,,,,32.518,kumkumadi oil,1
+Engagement,Product,122.176.198.148,2025-01-24 10:38:58.468000+00:00,4362652549187,,,,2.876,kumkumadi oil,1
+Engagement,Home,125.99.250.30,2025-01-24 10:03:38.236000+00:00,,,,,2921.152,,1
+Engagement,Cart Add,125.99.250.30,2025-01-24 10:34:40.167000+00:00,6889244262467,1,,,,Gheesutrā Nourishing Exfoliator,1
+Engagement,Home,125.99.250.30,2025-01-24 11:24:59.811000+00:00,,,,,4867.436,,1
+Engagement,Collection,125.99.250.30,2025-01-24 11:27:12.079000+00:00,,,best-sellers,,11.09,,1
+Engagement,Home,125.99.250.30,2025-01-24 11:36:48.714000+00:00,,,,,12.424,,1
+Engagement,Home,125.99.250.30,2025-01-24 12:01:43.628000+00:00,,,,,2201.871,,1
+Engagement,Cart Add,125.99.250.30,2025-01-25 04:42:55.722000+00:00,4362652549187,1,,,,Kumkumadi Oil,2
+Engagement,Cart Add,125.99.250.30,2025-01-25 06:02:11.349000+00:00,7349461188675,1,,,,gheesutra ritual collection,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:02:11.349000+00:00,6889244262467,,,,,gheesutra ritual collection,3
+Engagement,Home,125.99.250.30,2025-01-25 06:22:37.343000+00:00,,,,,7.136,,3
+Engagement,Cart Add,125.99.250.30,2025-01-25 06:22:54.026000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:23:01.985000+00:00,6919629996099,,,,,Free Gheesutrā Ritual Collection,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:23:03.846000+00:00,393865887773,,,,,Deep Cleanse Facial Ubtan,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:23:06.266000+00:00,4362652549187,,,,,Kumkumadi Oil,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:23:08.582000+00:00,7319643390019,,,,,Illuminate Kohl Kajal -Matte Black,3
+Engagement,Cart Add,125.99.250.30,2025-01-25 06:23:18.082000+00:00,393865887773,1,,,,Deep Cleanse Facial Ubtan,3
+Engagement,Collection,125.99.250.30,2025-01-25 06:23:22.121000+00:00,,,best-sellers,,43.703,,3
+Engagement,Cart Add,125.99.250.30,2025-01-25 06:23:38.296000+00:00,7240777072707,1,,,,Gheesutrā Mango Lip Butter,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:23:44.374000+00:00,7240777072707,,,,,Gheesutrā Mango Lip Butter,3
+Engagement,Collection,125.99.250.30,2025-01-25 06:23:50.245000+00:00,,,best-sellers,,28.123,,3
+Engagement,Cart Add,125.99.250.30,2025-01-25 06:33:04.213000+00:00,6919629996099,1,,,,luminous kohl kajal matte blue,3
+Engagement,Cart Remove,125.99.250.30,2025-01-25 06:33:10.167000+00:00,6919629996099,,,,,luminous kohl kajal matte blue,3
+Engagement,Collection,125.99.250.30,2025-01-25 10:16:40.829000+00:00,,,best-sellers,,6.051,,4
+Engagement,Product,125.99.250.30,2025-01-25 12:06:56.330000+00:00,393865887773,,,,2559.732,deep cleanse facial ubtan,5
+Engagement,Product,125.99.250.30,2025-01-25 12:06:56.453000+00:00,393865887773,,,,0.516,deep cleanse facial ubtan,5
+Engagement,Cart Remove,125.99.250.30,2025-01-27 04:09:21.636000+00:00,7349461188675,,,,,Luminous Kohl Kajal -Royal Blue,6
+Engagement,Cart Add,125.99.250.30,2025-01-27 04:09:42.511000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,6
+Engagement,Home,125.99.250.30,2025-01-27 04:12:36.466000+00:00,,,,,353.628,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:22:38.471000+00:00,,,all-collection,,25.065,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:36:59.922000+00:00,,,all-collection,,862.279,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:38:35.385000+00:00,,,all-collection,,8.321,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:39:25.457000+00:00,,,all-collection,,7.479,,6
+Engagement,Cart Add,125.99.250.30,2025-01-27 04:50:47.991000+00:00,12088221907,1,,,,Anti Age Serum,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:52:36.996000+00:00,,,face-care,,9.324,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:55:49.098000+00:00,,,face-care,,29.887,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:56:08.648000+00:00,,,lips-care,,3.85,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:56:30.250000+00:00,,,shankara-minis,,10.242,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:56:52.889000+00:00,,,gifting,,21.125,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:56:56.851000+00:00,,,gifting,,4.315,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:57:01.223000+00:00,,,gifting,,4.372,,6
+Engagement,Collection,125.99.250.30,2025-01-27 04:57:09.707000+00:00,,,gifting,,8.482,,6
+Engagement,Home,125.99.250.30,2025-01-27 05:03:40.504000+00:00,,,,,10.988,,6
+Engagement,Home,125.99.250.30,2025-01-27 05:06:23.652000+00:00,,,,,30.468,,6
+Engagement,Cart Remove,125.99.250.30,2025-01-27 05:06:54.342000+00:00,6919629996099,,,,,luminous kohl kajal matte blue,6
+Engagement,Cart Update,125.99.250.30,2025-01-27 05:06:54.342000+00:00,4362652549187,-1,,,,luminous kohl kajal matte blue,6
+Engagement,Home,125.99.250.30,2025-01-27 05:31:40.997000+00:00,,,,,2479.628,,6
+Engagement,Home,125.99.250.30,2025-01-27 05:37:08.516000+00:00,,,,,325.029,,6
+Engagement,Product,125.99.250.30,2025-01-27 07:02:34.674000+00:00,6994933252163,,,,4576.466,gheesutra saffron lip butter,7
+Engagement,Collection,125.99.250.30,2025-01-27 08:33:06.676000+00:00,,,all-collection,,5.847,,8
+Engagement,Product,125.99.250.30,2025-01-27 09:32:56.745000+00:00,6994933252163,,,,1690.111,gheesutra saffron lip butter,8
+Engagement,Cart Add,125.99.250.30,2025-01-27 09:33:14.742000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,8
+Engagement,Home,125.99.250.30,2025-01-27 10:17:31.220000+00:00,,,,,2663.769,,8
+Engagement,Collection,128.151.113.25,2025-01-26 07:10:58.283000+00:00,,,best-sellers,,27.857,,1
+Engagement,Collection,128.151.113.25,2025-01-26 07:11:29.658000+00:00,,,best-sellers,,32.547,,1
+Engagement,Collection,128.151.113.25,2025-01-26 07:12:53.726000+00:00,,,best-sellers,,30.619,,1
+Engagement,Collection,128.151.113.25,2025-01-26 07:13:09.032000+00:00,,,best-sellers,,15.672,,1
+Engagement,Collection,128.151.113.25,2025-01-26 07:13:35.714000+00:00,,,best-sellers,,26.696,,1
+Engagement,Collection,128.151.113.25,2025-01-26 07:15:14.492000+00:00,,,best-sellers,,98.779,,1
+Engagement,Cart Add,130.41.1.142,2025-01-24 12:00:28.773000+00:00,6994933252163,1,,,,Gheesutrā Saffron Lip Butter,1
+Engagement,Home,130.41.1.142,2025-01-24 12:59:18.659000+00:00,,,,,3551.915,,1
+Engagement,Product,134.238.253.156,2025-01-25 17:41:40.313000+00:00,12088188691,,,,264.37,hydrating cleanser fine lines,1
+Engagement,Product,134.238.253.156,2025-01-25 17:43:00.774000+00:00,12088188691,,,,2.123,hydrating cleanser fine lines,1
+Engagement,Product,134.238.253.156,2025-01-25 17:43:04.400000+00:00,12088188691,,,,4.044,hydrating cleanser fine lines,1
+Engagement,Product,134.238.253.156,2025-01-25 17:48:46.575000+00:00,6798650638403,,,,85.702,gheesutra face emulsion,1
+Engagement,Collection,134.238.253.156,2025-01-25 18:01:46.669000+00:00,,,gheesutra-collection,,12.995,,1
+Engagement,Home,134.238.253.156,2025-01-25 18:03:02.399000+00:00,,,,,73.716,,1
+Engagement,Collection,136.232.198.58,2025-01-27 08:32:12.600000+00:00,,,hair-care,,30.054,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:08:01.899000+00:00,,,,,7.211,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:13:22.948000+00:00,,,,,89.567,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:16:29.898000+00:00,,,,,110.576,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:16:47.336000+00:00,,,,,13.214,,1
+Engagement,Product,14.141.46.51,2025-01-27 05:16:54.054000+00:00,7319643390019,,,,3.919,illuminate kohl kajal,1
+Engagement,Home,14.141.46.51,2025-01-27 05:18:53.512000+00:00,,,,,117.597,,1
+Engagement,Cart Add,14.141.46.51,2025-01-27 05:19:08.029000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Home,14.141.46.51,2025-01-27 05:19:25.064000+00:00,,,,,28.298,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:21:19.156000+00:00,,,,,109.538,,1
+Engagement,Home,14.141.46.51,2025-01-27 05:36:31.551000+00:00,,,,,16.934,,1
+Engagement,Home,14.194.41.234,2025-01-27 06:20:38.838000+00:00,,,,,1412.257,,1
+Engagement,Home,14.194.41.234,2025-01-27 07:24:31.242000+00:00,,,,,2599.521,,2
+Engagement,Collection,142.190.51.130,2025-01-25 15:11:25.810000+00:00,,,face-care,,11.341,,1
+Engagement,Collection,142.190.51.130,2025-01-25 15:12:55.631000+00:00,,,face-care,,89.998,,1
+Engagement,Collection,142.190.51.130,2025-01-25 15:13:05.620000+00:00,,,face-care,,9.988,,1
+Engagement,Collection,142.190.51.130,2025-01-25 15:13:12.335000+00:00,,,face-care,,6.716,,1
+Engagement,Collection,142.190.51.130,2025-01-25 15:13:24.814000+00:00,,,face-care,,12.479,,1
+Engagement,Home,152.59.204.55,2025-01-27 06:09:10.247000+00:00,,,,,16.178,,1
+Engagement,Collection,157.41.229.90,2025-01-26 12:45:47.638000+00:00,,,best-sellers,,18.4,,1
+Engagement,Product,157.41.229.90,2025-01-26 12:49:08.484000+00:00,12088188691,,,,20.743,hydrating cleanser fine lines,1
+Engagement,Product,157.41.229.90,2025-01-26 12:49:09.882000+00:00,12088188691,,,,2.695,hydrating cleanser fine lines,1
+Engagement,Product,157.41.229.90,2025-01-26 12:49:11.186000+00:00,12088188691,,,,1.218,hydrating cleanser fine lines,1
+Engagement,Home,157.51.199.234,2025-01-27 05:43:05.635000+00:00,,,,,113.28,,1
+Engagement,Collection,157.51.199.234,2025-01-27 09:16:14.247000+00:00,,,moisturizers-emulsion,,1809.652,,2
+Engagement,Collection,157.51.199.234,2025-01-27 09:22:03.423000+00:00,,,gheesutra-collection,,9.58,,2
+Engagement,Collection,157.51.199.234,2025-01-27 09:22:42.721000+00:00,,,gheesutra-collection,,2.679,,2
+Engagement,Cart Add,167.103.2.98,2025-01-25 12:14:07.502000+00:00,7319643390019,1,,,,gheesutra hand and foot cream,1
+Engagement,Collection,171.48.85.240,2025-01-25 04:52:21.007000+00:00,,,hair-and-facial-tools,,150.808,,1
+Engagement,Home,171.51.133.73,2025-01-25 05:52:39.206000+00:00,,,,,57.631,,1
+Engagement,Collection,171.76.80.156,2025-01-24 08:02:04.613000+00:00,,,lips-care,,14.294,,1
+Engagement,Collection,171.76.83.248,2025-01-25 07:40:17.090000+00:00,,,best-sellers,,14.511,,1
+Engagement,Collection,171.76.83.248,2025-01-25 07:40:41.571000+00:00,,,best-sellers,,20.589,,1
+Engagement,Collection,171.76.83.248,2025-01-25 07:40:48.157000+00:00,,,best-sellers,,6.588,,1
+Engagement,Home,182.48.223.216,2025-01-24 15:37:57.429000+00:00,,,,,97.605,,1
+Engagement,Home,182.48.223.216,2025-01-24 15:38:26.789000+00:00,,,,,29.354,,1
+Engagement,Home,182.74.197.50,2025-01-27 05:41:44.008000+00:00,,,,,105.323,,1
+Engagement,Home,182.74.197.50,2025-01-27 05:42:47.656000+00:00,,,,,19.343,,1
+Engagement,Home,182.74.197.50,2025-01-27 06:14:28.704000+00:00,,,,,184.701,,1
+Engagement,Collection,183.83.231.6,2025-01-25 07:04:17.076000+00:00,,,best-sellers,,25.962,,1
+Engagement,Collection,183.83.231.6,2025-01-25 07:04:53.245000+00:00,,,best-sellers,,36.427,,1
+Engagement,Collection,183.83.231.6,2025-01-25 07:05:05.015000+00:00,,,best-sellers,,5.024,,1
+Engagement,Home,190.31.114.233,2025-01-24 18:28:47.718000+00:00,,,,,90.25,,1
+Engagement,Collection,202.43.120.93,2025-01-27 07:27:53.502000+00:00,,,gifting,,37.143,,1
+Engagement,Collection,202.43.120.93,2025-01-27 07:28:20.050000+00:00,,,gifting,,26.868,,1
+Engagement,Collection,202.43.120.93,2025-01-27 07:28:41.109000+00:00,,,gifting,,21.058,,1
+Engagement,Collection,203.192.253.34,2025-01-26 16:43:17.880000+00:00,,,gheesutra-collection,,90.299,,1
+Engagement,Collection,203.192.253.34,2025-01-26 16:47:41.013000+00:00,,,gheesutra-collection,,50.122,,1
+Engagement,Collection,203.192.253.34,2025-01-26 16:48:25.411000+00:00,,,gheesutra-collection,,15.826,,1
+Engagement,Collection,203.192.253.34,2025-01-26 16:49:00.957000+00:00,,,gheesutra-collection,,10.081,,1
+Engagement,Product,203.192.253.34,2025-01-27 03:14:53.048000+00:00,6798650638403,,,,67.442,gheesutra face emulsion,2
+Engagement,Product,203.192.253.34,2025-01-27 03:14:53.233000+00:00,6798650638403,,,,0.256,gheesutra face emulsion,2
+Engagement,Home,205.254.163.171,2025-01-25 09:36:46.253000+00:00,,,,,4.824,,1
+Engagement,Home,206.75.164.24,2025-01-26 20:29:28.451000+00:00,,,,,19.812,,1
+Engagement,Home,206.75.164.24,2025-01-26 20:29:37.537000+00:00,,,,,8.163,,1
+Engagement,Product,206.75.164.24,2025-01-26 20:37:11.191000+00:00,6798650638403,,,,260.541,gheesutra face emulsion,1
+Engagement,Cart Add,206.75.164.24,2025-01-26 20:40:59.525000+00:00,6930766757955,1,,,,gheesutra divine duo,1
+Engagement,Cart Update,206.75.164.24,2025-01-26 20:41:08.062000+00:00,6798650638403,-1,,,,gheesutra divine duo,1
+Engagement,Cart Update,206.75.164.24,2025-01-26 20:41:08.375000+00:00,6798650638403,-1,,,,gheesutra divine duo,1
+Engagement,Cart Update,206.75.164.24,2025-01-26 20:41:09.362000+00:00,6798650638403,-1,,,,gheesutra divine duo,1
+Engagement,Cart Update,206.75.164.24,2025-01-26 20:41:09.833000+00:00,6798650638403,-1,,,,gheesutra divine duo,1
+Engagement,Cart Update,206.75.164.24,2025-01-26 20:41:11.168000+00:00,6798650638403,-1,,,,gheesutra divine duo,1
+Engagement,Cart Remove,206.75.164.24,2025-01-26 20:41:30.628000+00:00,6919629996099,,,,,gheesutra divine duo,1
+Engagement,Product,206.75.164.24,2025-01-26 20:41:59.697000+00:00,6930766757955,,,,95.064,gheesutra divine duo,1
+Engagement,Home,206.75.164.24,2025-01-26 20:47:47.114000+00:00,,,,,10.606,,1
+Engagement,Home,212.5.158.186,2025-01-24 11:40:48.406000+00:00,,,,,0.161,,1
+Engagement,Collection,223.178.209.244,2025-01-24 14:33:28.429000+00:00,,,best-sellers,,12.478,,1
+Engagement,Collection,223.178.209.244,2025-01-24 14:33:34.090000+00:00,,,best-sellers,,1.683,,1
+Engagement,Home,223.178.211.71,2025-01-24 10:34:35.730000+00:00,,,,,17.008,,1
+Engagement,Cart Add,223.178.211.71,2025-01-24 10:38:12.345000+00:00,393865887773,1,,,,Deep Cleanse Facial Ubtan,1
+Engagement,Home,223.178.211.71,2025-01-24 10:38:14.704000+00:00,,,,,43.764,,1
+Engagement,Cart Add,223.178.211.71,2025-01-24 10:38:32.005000+00:00,7012540481603,1,,,,Soothing Body Mist,1
+Engagement,Home,223.178.211.71,2025-01-24 10:39:31.652000+00:00,,,,,0.343,,1
+Engagement,Home,223.178.211.71,2025-01-24 10:51:18.708000+00:00,,,,,712.539,,1
+Engagement,Home,223.178.211.71,2025-01-24 10:52:19.990000+00:00,,,,,61.283,,1
+Engagement,Collection,223.178.211.71,2025-01-24 10:55:38.539000+00:00,,,best-sellers,,196.979,,1
+Engagement,Collection,223.178.211.71,2025-01-24 10:55:42.269000+00:00,,,best-sellers,,4.253,,1
+Engagement,Product,223.184.250.246,2025-01-25 08:43:10.018000+00:00,1725779607619,,,,3255.541,geranium essential oil deodorant,1
+Engagement,Home,223.185.130.168,2025-01-27 05:14:19+00:00,,,,,842.655,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:37.881000+00:00,,,all-collection,,4.96,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:41.473000+00:00,,,all-collection,,3.939,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:44.525000+00:00,,,all-collection,,3.053,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:49.102000+00:00,,,all-collection,,4.576,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:53.151000+00:00,,,all-collection,,4.049,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:37:56.856000+00:00,,,all-collection,,3.706,,1
+Engagement,Collection,223.185.133.48,2025-01-24 07:38:01.557000+00:00,,,all-collection,,4.701,,1
+Engagement,Home,223.185.133.48,2025-01-24 10:19:50.922000+00:00,,,,,9538.075,,2
+Engagement,Home,223.185.133.48,2025-01-24 10:20:27.535000+00:00,,,,,34.173,,2
+Engagement,Cart Add,223.185.133.48,2025-01-24 10:20:27.699000+00:00,6895610134595,2,,,,Gheesutrā Hand and Foot Cream,2
+Engagement,Product,223.185.133.48,2025-01-24 11:13:02.167000+00:00,4362652549187,,,,3151.316,kumkumadi oil,2
+Engagement,Home,223.196.192.18,2025-01-26 12:18:12.229000+00:00,,,,,0.842,,1
+Engagement,Home,223.196.192.18,2025-01-26 12:18:33.400000+00:00,,,,,23.131,,1
+Engagement,Collection,223.196.192.18,2025-01-26 12:18:45.608000+00:00,,,body-mist-deodorant,,10.627,,1
+Engagement,Product,223.228.73.12,2025-01-25 05:25:27.337000+00:00,4362652549187,,,,1.748,kumkumadi oil,1
+Engagement,Collection,223.231.141.234,2025-01-24 17:42:37.037000+00:00,,,gifting,,23.518,,1
+Engagement,Collection,223.231.141.234,2025-01-24 17:42:46.681000+00:00,,,gifting,,9.97,,1
+Engagement,Collection,223.231.141.234,2025-01-24 17:43:05.828000+00:00,,,gifting,,19.147,,1
+Engagement,Collection,223.233.80.128,2025-01-24 08:54:48.458000+00:00,,,best-sellers,,12.875,,1
+Engagement,Collection,223.233.80.128,2025-01-24 08:56:07.816000+00:00,,,best-sellers,,79.329,,1
+Engagement,Collection,223.233.80.128,2025-01-24 08:57:47.307000+00:00,,,best-sellers,,99.544,,1
+Engagement,Collection,223.233.80.128,2025-01-24 08:58:57.109000+00:00,,,best-sellers,,66.951,,1
+Engagement,Collection,223.233.80.128,2025-01-24 09:00:26.164000+00:00,,,best-sellers,,19.71,,1
+Engagement,Cart Add,223.233.80.128,2025-01-24 09:05:48.276000+00:00,6798650638403,1,,,,gheesutra face emulsion,1
+Engagement,Product,223.233.80.128,2025-01-24 09:06:00.976000+00:00,6798650638403,,,,134.861,gheesutra face emulsion,1
+Engagement,Collection,223.233.80.128,2025-01-24 09:15:04.792000+00:00,,,moisturizers-emulsion,,18.9,,1
+Engagement,Collection,223.233.80.128,2025-01-24 09:24:17.731000+00:00,,,face-oils-serums,,28.068,,1
+Engagement,Collection,223.233.80.128,2025-01-24 09:26:23.547000+00:00,,,face-oils-serums,,30.339,,1
+Engagement,Home,223.236.103.233,2025-01-24 10:55:52.611000+00:00,,,,,3.217,,1
+Engagement,Home,27.34.64.82,2025-01-25 08:52:04.373000+00:00,,,,,23.271,,1
+Engagement,Home,27.34.64.82,2025-01-25 08:54:25.141000+00:00,,,,,13.592,,1
+Engagement,Collection,27.34.64.82,2025-01-25 09:06:40.807000+00:00,,,gheesutra-collection,,7.343,,1
+Engagement,Collection,27.34.64.82,2025-01-25 09:06:56.786000+00:00,,,gheesutra-collection,,15.979,,1
+Engagement,Home,27.7.97.124,2025-01-25 18:51:45.484000+00:00,,,,,25.688,,1
+Engagement,Home,38.137.20.249,2025-01-27 07:35:25.396000+00:00,,,,,64.398,,1
+Engagement,Collection,4.36.36.42,2025-01-24 17:31:57.482000+00:00,,,best-sellers,,40.841,,1
+Engagement,Collection,4.36.36.42,2025-01-24 17:32:29.453000+00:00,,,best-sellers,,31.971,,1
+Engagement,Cart Add,4.36.36.42,2025-01-24 17:33:09.607000+00:00,6945815134275,1,,,,Shankara Essence Lotus Rose,1
+Engagement,Collection,4.36.36.42,2025-01-24 17:33:23.375000+00:00,,,best-sellers,,53.907,,1
+Engagement,Collection,4.36.36.42,2025-01-24 23:13:17.066000+00:00,,,best-sellers,,20393.707,,2
+Engagement,Product,45.248.28.23,2025-01-24 12:38:29.717000+00:00,6930766757955,,,,0.716,gheesutra divine duo,1
+Engagement,Collection,47.143.207.113,2025-01-24 23:34:13.252000+00:00,,,best-sellers,,50.574,,1
+Engagement,Product,47.143.207.113,2025-01-24 23:35:05.135000+00:00,1725779607619,,,,51.308,geranium essential oil deodorant,1
+Engagement,Cart Add,47.143.207.113,2025-01-24 23:35:26.834000+00:00,1725779607619,1,,,,Aura Essential Oil Deodorant - Geranium & Ylang Ylang,1
+Engagement,Collection,47.143.207.113,2025-01-24 23:35:27.032000+00:00,,,best-sellers,,21.507,,1
+Engagement,Cart Add,47.143.207.113,2025-01-24 23:35:37.988000+00:00,1725639852099,1,,,,Aura Essential Oil Deodorant - Lavender & Vetiver,1
+Engagement,Collection,47.143.207.113,2025-01-24 23:35:56.047000+00:00,,,best-sellers,,29.024,,1
+Engagement,Cart Add,47.143.207.113,2025-01-24 23:36:24.353000+00:00,6945798914115,1,,,,Aromatherapy Collection Roll-on set,1
+Engagement,Collection,47.143.207.113,2025-01-24 23:36:25.371000+00:00,,,best-sellers,,29.322,,1
+Engagement,Cart Add,47.143.207.113,2025-01-24 23:36:45.694000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Cart Remove,47.143.207.113,2025-01-24 23:37:28.019000+00:00,6919629996099,,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Collection,47.143.207.113,2025-01-25 21:57:40.480000+00:00,,,best-sellers,,80463.785,,2
+Engagement,Collection,47.143.207.113,2025-01-26 22:27:43.949000+00:00,,,best-sellers,,1.378,,3
+Engagement,Collection,47.143.207.113,2025-01-26 22:27:45.450000+00:00,,,best-sellers,,1.415,,3
+Engagement,Home,49.205.112.142,2025-01-25 04:12:04.073000+00:00,,,,,0.253,,1
+Engagement,Home,49.205.112.142,2025-01-25 04:12:21.885000+00:00,,,,,20.713,,1
+Engagement,Collection,49.207.233.160,2025-01-26 15:22:31.065000+00:00,,,best-sellers,,312.198,,1
+Engagement,Product,49.207.233.160,2025-01-26 16:15:35.356000+00:00,12088223891,,,,2338.272,brightening serum,1
+Engagement,Collection,49.207.246.143,2025-01-25 11:33:33.480000+00:00,,,best-sellers,,0.255,,1
+Engagement,Product,49.32.195.197,2025-01-25 06:29:46.602000+00:00,6895610134595,,,,872.181,gheesutra hand and foot cream,1
+Engagement,Collection,49.32.195.197,2025-01-25 06:37:15.312000+00:00,,,best-sellers,,12.195,,1
+Engagement,Product,49.36.107.78,2025-01-25 17:07:02.601000+00:00,393865887773,,,,2.901,deep cleanse facial ubtan,1
+Engagement,Collection,49.36.184.205,2025-01-27 02:59:33.505000+00:00,,,lips-care,,12.432,,1
+Engagement,Collection,49.36.184.205,2025-01-27 03:01:34.747000+00:00,,,lips-care,,11.72,,1
+Engagement,Collection,49.36.184.205,2025-01-27 03:03:14.835000+00:00,,,lips-care,,4.513,,1
+Engagement,Collection,49.36.184.205,2025-01-27 03:04:09.840000+00:00,,,lips-care,,3.6,,1
+Engagement,Home,49.36.69.26,2025-01-24 08:32:45.250000+00:00,,,,,57.626,,1
+Engagement,Home,49.36.69.26,2025-01-24 08:32:56.578000+00:00,,,,,11.332,,1
+Engagement,Home,49.36.69.26,2025-01-24 08:32:57.734000+00:00,,,,,1.149,,1
+Engagement,Home,49.36.69.26,2025-01-24 08:33:02.727000+00:00,,,,,4.999,,1
+Engagement,Collection,49.37.129.246,2025-01-25 06:00:27.766000+00:00,,,gheesutra-collection,,7.481,,1
+Engagement,Cart Add,49.37.162.159,2025-01-25 07:53:45.230000+00:00,6597541396547,1,,,,Soothing Lip Oil,1
+Engagement,Collection,49.37.162.159,2025-01-25 07:54:01.555000+00:00,,,gheesutra-collection,,19.249,,1
+Engagement,Home,49.37.249.128,2025-01-25 04:36:53.364000+00:00,,,,,72181.972,,1
+Engagement,Collection,49.43.201.95,2025-01-24 08:15:41.806000+00:00,,,gheesutra-collection,,32.704,,1
+Engagement,Collection,49.43.201.95,2025-01-24 08:15:50.179000+00:00,,,gheesutra-collection,,8.931,,1
+Engagement,Home,49.43.90.212,2025-01-26 13:23:09.319000+00:00,,,,,16478.512,,1
+Engagement,Home,58.84.60.205,2025-01-27 06:26:03.503000+00:00,,,,,113.395,,1
+Engagement,Collection,58.84.60.205,2025-01-27 06:26:14.522000+00:00,,,all,,8.912,,1
+Engagement,Home,58.84.60.205,2025-01-27 06:26:51.015000+00:00,,,,,35.765,,1
+Engagement,Home,58.84.60.205,2025-01-27 06:59:16.528000+00:00,,,,,1937.011,,1
+Engagement,Product,58.84.60.205,2025-01-27 08:20:01.055000+00:00,7319643390019,,,,4834.884,illuminate kohl kajal,2
+Engagement,Collection,58.84.62.250,2025-01-25 10:12:37.832000+00:00,,,best-sellers,,35.205,,1
+Engagement,Collection,58.84.62.250,2025-01-25 10:14:09.278000+00:00,,,best-sellers,,92.037,,1
+Engagement,Collection,58.84.62.250,2025-01-25 10:14:39.376000+00:00,,,best-sellers,,30.102,,1
+Engagement,Cart Add,58.84.62.250,2025-01-25 16:13:12.791000+00:00,7349461188675,1,,,,Luminous Kohl Kajal -Royal Blue,2
+Engagement,Collection,76.184.241.208,2025-01-27 03:52:49.825000+00:00,,,gifting,,13.724,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:17:16.529000+00:00,,,gifting,,1466.805,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:17:31.413000+00:00,,,gifting,,14.883,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:17:36.765000+00:00,,,gifting,,5.348,,1
+Engagement,Cart Add,76.184.241.208,2025-01-27 04:19:54.717000+00:00,6994924732483,1,,,,luminous kohl kajal matte blue,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:20:53.494000+00:00,,,gifting,,9.882,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:20:58.865000+00:00,,,gifting,,5.449,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:21:25.223000+00:00,,,gifting,,26.358,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:21:45.161000+00:00,,,gifting,,19.937,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:22:20.089000+00:00,,,gifting,,11.304,,1
+Engagement,Cart Add,76.184.241.208,2025-01-27 04:22:20.240000+00:00,7319643390019,1,,,,Illuminate Kohl Kajal -Matte Black,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:22:55.045000+00:00,,,gifting,,34.955,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:23:37.712000+00:00,,,gifting,,35.835,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:23:51.028000+00:00,,,gifting,,13.316,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:24:00.396000+00:00,,,gifting,,9.367,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:24:37.342000+00:00,,,gifting,,8.441,,1
+Engagement,Cart Add,76.184.241.208,2025-01-27 04:24:37.495000+00:00,7350186967107,1,,,,Christmas Celebrations Box,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:24:42.388000+00:00,,,gifting,,5.046,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:24:52.155000+00:00,,,gifting,,9.767,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:24:58.146000+00:00,,,gifting,,5.99,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:25:42.437000+00:00,,,gifting,,6.235,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:25:56.740000+00:00,,,gifting,,14.416,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:26:07.978000+00:00,,,gifting,,11.238,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:26:32.778000+00:00,,,gifting,,24.799,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:26:41.929000+00:00,,,gifting,,9.152,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:32:15.122000+00:00,,,gifting,,4.076,,1
+Engagement,Collection,76.184.241.208,2025-01-27 04:32:20.361000+00:00,,,gifting,,5.405,,1
+Engagement,Product,76.184.241.208,2025-01-27 04:38:36.550000+00:00,6597520556099,,,,351.905,timeless lip oil,1
+Engagement,Cart Remove,76.184.241.208,2025-01-27 04:42:06.028000+00:00,6919629996099,,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Collection,76.97.166.30,2025-01-27 01:42:31.162000+00:00,,,best-sellers,,11.56,,1
+Engagement,Cart Add,76.97.166.30,2025-01-27 01:43:05.078000+00:00,6919629996099,1,,,,Free Gheesutrā Ritual Collection,1
+Engagement,Collection,76.97.166.30,2025-01-27 01:43:05.175000+00:00,,,best-sellers,,33.334,,1
+Engagement,Cart Add,78.61.160.203,2025-01-25 14:28:22.536000+00:00,6945815134275,1,,,,Shankara Essence Lotus Rose,1
+Engagement,Collection,78.61.160.203,2025-01-25 14:28:26.587000+00:00,,,candle,,63486.238,,1
+Engagement,Home,82.131.34.122,2025-01-27 08:55:09.033000+00:00,,,,,8.8,,1
+Engagement,Collection,82.131.34.122,2025-01-27 09:02:38.432000+00:00,,,best-sellers,,448.406,,1
+Engagement,Collection,82.131.34.122,2025-01-27 09:03:15.604000+00:00,,,best-sellers,,37.574,,1
+Engagement,Cart Add,96.244.133.23,2025-01-26 00:42:13.068000+00:00,6919629996099,1,,,,timeless restorative skin elixir,1
+Engagement,Collection,96.244.133.23,2025-01-26 00:43:08.685000+00:00,,,best-sellers,,31.906,,1
+Engagement,Collection,96.244.133.23,2025-01-26 00:43:31.949000+00:00,,,best-sellers,,23.315,,1
+Engagement,Collection,97.70.107.187,2025-01-26 05:04:40.762000+00:00,,,best-sellers,,2361.322,,1
+Engagement,Collection,97.70.107.187,2025-01-26 18:24:46.303000+00:00,,,hair-and-facial-tools,,50.99,,2

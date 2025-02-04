@@ -1,0 +1,2 @@
+Order_ID,Order_Created_At,Order_Updated_At,Order_Referring_Site,Order_Total_Discount,Order_Total_Price,Product_ID,Product_Quantity,Variant_ID,Currency,Product_Variant_Price,Customer_ID
+6634999021637,2020-06-06T00:19:28Z,2020-06-06T00:19:28Z,,0.0,73.06,,1,,USD,,856261558341
