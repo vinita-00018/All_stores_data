@@ -17,9 +17,8 @@ try:
     subprocess.run(["git", "add", "."], check=True)
     commit_message = "Initial commit or your custom message"
     subprocess.run(["git", "commit", "-m", commit_message], check=True)
-    subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
+    subprocess.run(["git", "Pull", "-u", "origin", "main"], check=True)
     print("Folder has been successfully pushed to GitHub!")
-
 except subprocess.CalledProcessError as e:
     print(f"Git command failed: {e}")
 except Exception as e:
