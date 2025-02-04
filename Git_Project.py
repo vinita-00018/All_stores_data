@@ -52,7 +52,7 @@ try:
     # Ensure the branch is set to 'main'
     subprocess.run(["git", "branch", "-M", "main"], check=True)
 
-    # Stage changes
+    # Stage all changes (including the untracked files in 'data')
     subprocess.run(["git", "add", "--all"], check=True)
 
     # Check if there are changes to commit
@@ -64,12 +64,22 @@ try:
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         print("Changes committed.")
 
-    # Fetch and rebase from the remote
+    # Fetch the latest changes from the remote repository
     subprocess.run(["git", "fetch", "origin"], check=True)
+
+    # Rebase the local changes with the remote 'main' branch
     subprocess.run(["git", "rebase", "origin/main"], check=True)
 
-    # Push to the remote repository
+    # Push the changes to the remote repository
     subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
+
+    print("Folder has been successfully pushed to GitHub!")
+
+except subprocess.CalledProcessError as e:
+    print(f"Git command failed: {e}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 
     print("Folder has been successfully pushed to GitHub!")
 
