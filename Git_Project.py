@@ -3,7 +3,7 @@ import os
 
 try:
     folder_path = "D:\\Vinita\\Project\\Final_Project_Streamlit"
-    repository_url = "https://github.com/vinita-00018/Fetcher_data.git"
+    repository_url = "https://github.com//vinita-00018//All_stores_data.git"
 
     os.chdir(folder_path)
 
@@ -20,18 +20,19 @@ try:
     # Ensure we are on the correct branch
     subprocess.run(["git", "branch", "-M", "main"], check=True)
 
-    # Add all files
-    subprocess.run(["git", "add", "--all"], check=True)
+    # Check if there are unstaged or uncommitted changes
+    status_result = subprocess.run(["git", "status"], capture_output=True, text=True)
 
-    # Check if there's anything to commit
-    result = subprocess.run(["git", "status"], capture_output=True, text=True)
-    if "nothing to commit" in result.stdout:
+    if "nothing to commit" in status_result.stdout:
         print("No changes to commit.")
     else:
+        # Option 1: Commit the changes
+        subprocess.run(["git", "add", "--all"], check=True)
         commit_message = "Initial commit or your custom message"
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
+        print("Changes committed.")
 
-    # Push changes
+    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
     subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
 
     print("Folder has been successfully pushed to GitHub!")

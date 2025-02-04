@@ -16,8 +16,8 @@ def add_tooltip_css():
             cursor: pointer;
             color: #007BFF; /* Blue color for the info icon */
             font-weight: normal;
-            margin-left: 10px; /* Add spacing between text and icon */
-            font-size: 18px; /* Adjust the size of the icon */
+            margin-left: 3px; /* Add spacing between text and icon */
+            font-size: 12px; /* Adjust the size of the icon */
         }}
         .tooltip .tooltiptext {{
             visibility: hidden;
@@ -75,8 +75,8 @@ def add_custom_css():
         """
         <style>
         .card {
-            background-color: #87CEEB;
-            color: black;
+            background-color: #454545;
+            color: white;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
@@ -137,7 +137,7 @@ def get_store_names(data_dir):
     return list(store_names)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-data_dir = r"D:\Vinita\Project\Final_Project_Streamlit\data"
+data_dir = os.path.join(BASE_DIR, "data")
 store_names = get_store_names(data_dir)
 store_select = st.sidebar.selectbox('Select Store', store_names)
 if store_select:
@@ -224,8 +224,8 @@ def show_customer_data_page():
             if df_customers is None or df_customers.empty:
                 st.markdown("<h1 style='color: blue; text-align: center;'>Listed Customers Data Unavailable</h1>",unsafe_allow_html=True)
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for listed customers.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for listed customers.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             else:
@@ -250,8 +250,8 @@ def show_customer_data_page():
             if df_orders is None or df_orders.empty:
                 st.title("Paying Customers")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for paying customers.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for paying customers.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             else:
@@ -277,8 +277,8 @@ def show_customer_data_page():
             if df_orders is None or df_orders.empty or 'Customer_Name' not in df_orders.columns or 'Order_Total_Price' not in df_orders.columns:
                 st.title("Repeat Customers")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">Repeat Customers is Unavailable.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">Repeat Customers is Unavailable.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             else:
@@ -332,8 +332,8 @@ def show_customer_data_page():
             if df_orders is None or df_orders.empty:
                 st.title("Highest Valued Customers")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for top customers.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for top customers.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             else:
@@ -383,8 +383,8 @@ def show_customer_data_page():
             if df_orders is None or df_orders.empty:
                 st.title("Least Valued Customers")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for least customers.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for least customers.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             else:
@@ -462,8 +462,8 @@ def show_customer_data_page():
             # If No Data Available
             st.title("Customer Order Summary")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for customers with two or more orders.</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for customers with two or more orders.</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -512,7 +512,7 @@ def show_customer_data_page():
                 st.title("Unique Customers by Province")
                 st.markdown("""
                     <div style="border: 2px solid red; padding: 20px; background-color: #f8d7da; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for unique customers by province.</h3>
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for unique customers by province.</h3>
                     </div>
                 """, unsafe_allow_html=True)
         # Country Chart
@@ -552,7 +552,7 @@ def show_customer_data_page():
                 st.title("Unique Customers by Country")
                 st.markdown("""
                     <div style="border: 2px solid red; padding: 20px; background-color: #f8d7da; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for unique customers by country.</h3>
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for unique customers by country.</h3>
                     </div>
                 """, unsafe_allow_html=True)
     except:
@@ -622,8 +622,8 @@ def show_cj_page():
         else:
             st.title("Customer and Session Summary")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Customer and Session Summary - No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Customer and Session Summary - No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -638,49 +638,39 @@ def show_cj_page():
         st.dataframe(filtered_cj, use_container_width=True)
 
         # #Todo- Session details on weekdays and Weekends
-        col1 = st.columns(1)[0]
+        col1, col2 = st.columns(2)
+        # --- Weekday vs Weekend Pie Chart ---
         with col1:
             add_tooltip_css()
-            tooltip_html = render_tooltip(
-                "This chart compares the total number of sessions on weekdays and weekends based on event timestamps. The data is grouped by unique customer sessions. Hover over the chart to see detailed information, including the category (Weekday or Weekend), the session count, and the percentage representation."
-            )
-            st.markdown(
-                f"<h1 style='display: inline-block;'>Total sessions: weekday vs weekend {tooltip_html}</h1>",
-                unsafe_allow_html=True
-            )
-
-            # Ensure Event_Time is in datetime format
-            df_cj['Event_Time'] = pd.to_datetime(df_cj['Event_Time'], errors='coerce', utc=True)
-            df_cj['Weekday_Weekend'] = df_cj['Event_Time'].dt.dayofweek.apply(
-                lambda x: 'Weekend' if x >= 5 else 'Weekday'
-            )
+            tooltip_html = render_tooltip("This chart compares the total number of sessions on weekdays and weekends based on event timestamps. The data is grouped by unique customer sessions. Hover over the chart to see detailed information, including the category (Weekday or Weekend), the session count, and the percentage representation.")
+            st.markdown(f"<h1 style='display: inline-block;'>Total sessions:weekday,weekend{tooltip_html}</h1>",unsafe_allow_html=True)
+            # Determine Weekday or Weekend
+            df_cj["Weekday_Weekend"] = df_cj["Event_Time"].dt.dayofweek.apply(
+                lambda x: "Weekend" if x >= 5 else "Weekday")
 
             if not df_cj.empty:
-                filtered_df = df_cj
-                grouped_filtered_df = filtered_df.groupby(['Customer_IP', 'session']).first().reset_index()
-                weekday_count = grouped_filtered_df[grouped_filtered_df['Weekday_Weekend'] == 'Weekday'].shape[0]
-                weekend_count = grouped_filtered_df[grouped_filtered_df['Weekday_Weekend'] == 'Weekend'].shape[0]
+                grouped_filtered_df = df_cj.groupby(["Customer_IP", "session"]).first().reset_index()
+                weekday_count = grouped_filtered_df[grouped_filtered_df["Weekday_Weekend"] == "Weekday"].shape[0]
+                weekend_count = grouped_filtered_df[grouped_filtered_df["Weekday_Weekend"] == "Weekend"].shape[0]
+
                 counts = [weekday_count, weekend_count]
-                labels = ['Weekday', 'Weekend']
-
+                labels = ["Weekday", "Weekend"]
                 # Display counts and percentages
-                st.write(f"Weekday Count: {weekday_count} ({(weekday_count / sum(counts)) * 100:.2f}%)")
-                st.write(f"Weekend Count: {weekend_count} ({(weekend_count / sum(counts)) * 100:.2f}%)")
-
+                total_sessions = sum(counts)
+                # st.write(f"**Weekday Count:** {weekday_count} ({(weekday_count / total_sessions) * 100:.2f}%)")
+                # st.write(f"**Weekend Count:** {weekend_count} ({(weekend_count / total_sessions) * 100:.2f}%)")
                 # Prepare DataFrame for Chart
                 pie_data = pd.DataFrame({
-                    'Category': labels,
-                    'Count': counts,
-                    'Percentage': [(count / sum(counts)) * 100 for count in counts]
+                    "Category": labels,
+                    "Count": counts,
+                    "Percentage": [(count / total_sessions) * 100 for count in counts]
                 })
-                pie_data['Label'] = pie_data['Percentage'].round(1).astype(str) + '%'  # Show percentage
-
-                # Create Pie Chart with Altair
-                pie_chart = alt.Chart(pie_data).mark_arc().encode(
+                # Create Pie Chart with fixed size
+                pie_chart = alt.Chart(pie_data).mark_arc(size=200).encode(
                     theta=alt.Theta(field="Count", type="quantitative"),
                     color=alt.Color(field="Category", type="nominal"),
                     tooltip=["Category", "Count", "Percentage"]
-                )
+                ).properties(width=300, height=300)  # Uniform size
 
                 # Display the Chart
                 st.altair_chart(pie_chart, use_container_width=True)
@@ -688,62 +678,52 @@ def show_cj_page():
             else:
                 st.title("Total Sessions: Weekday vs Weekend")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">Total Sessions: Weekday vs Weekend - No Data Available</h3>
-                    </div>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 20px; color: black; font-weight: bold;">Total Sessions: Weekday vs Weekend - No Data Available</h3>
+                </div>
                 """, unsafe_allow_html=True)
 
-
-        # Todo- Total session with per day data
-        col1 = st.columns(1)[0]
-
-        with col1:
+        # --- Days of the Week Pie Chart ---
+        with col2:
             add_tooltip_css()
             tooltip_html = render_tooltip(
                 "This chart displays the total number of sessions across different days of the week. The pie chart shows how sessions are distributed by day, with each segment representing one day of the week. Hover over the segments to see the number of sessions for each specific day. The data is based on unique sessions for each customer IP."
             )
-            st.markdown(f"<h1 style='display: inline-block;'>Total sessions: days of week {tooltip_html}</h1>",
+            st.markdown(f"<h1 style='display: inline-block;'>Total sessions: days of week  {tooltip_html}</h1>",
                         unsafe_allow_html=True)
-
-            # Convert to datetime
-            df_cj['Event_Time'] = pd.to_datetime(df_cj['Event_Time'], errors='coerce', utc=True)
-            df_cj_ = df_cj.dropna(subset=['Event_Time'])
-            if not df_cj_.empty:
-                df_cj['days_of_week'] = df_cj_['Event_Time'].dt.dayofweek.apply(
-                    lambda x: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][x]
+            if not df_cj.empty:
+                df_cj["days_of_week"] = df_cj["Event_Time"].dt.dayofweek.apply(
+                    lambda x: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][x]
                 )
-                grouped_filtered_df = df_cj.groupby(['Customer_IP', 'session']).first().reset_index()
-                day_count = grouped_filtered_df['days_of_week'].value_counts()
+                grouped_filtered_df = df_cj.groupby(["Customer_IP", "session"]).first().reset_index()
+                day_count = grouped_filtered_df["days_of_week"].value_counts()
                 day_count = day_count.reindex(
-                    ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], fill_value=0
+                    ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], fill_value=0
                 )
                 # Create DataFrame
                 pie_data = pd.DataFrame({
-                    'Day': day_count.index,
-                    'Count': day_count.values
+                    "Day": day_count.index,
+                    "Count": day_count.values
                 })
-                # Pie Chart
-                pie_chart = alt.Chart(pie_data).mark_arc().encode(
-                    theta='Count:Q',
-                    color=alt.Color('Day:N',
-                                    sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
-                                          'Sunday']),
-                    tooltip=['Day:N', 'Count:Q']
-                ).properties(title="Total Sessions by Day of the Week")
+                # Create Pie Chart with fixed size
+                pie_chart = alt.Chart(pie_data).mark_arc(size=200).encode(
+                    theta="Count:Q",
+                    color=alt.Color("Day:N", sort=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+                                                   "Sunday"]),
+                    tooltip=["Day:N", "Count:Q"]
+                ).properties(width=300, height=300)  # Uniform size
                 # Display Chart
                 st.altair_chart(pie_chart, use_container_width=True)
             else:
                 st.title("Total Sessions by Day of the Week")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">Total Sessions by Day of the Week - No Data Available</h3>
-                    </div>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 20px; color: black; font-weight: bold;">Total Sessions by Day of the Week - No Data Available</h3>
+                </div>
                 """, unsafe_allow_html=True)
-
 
         # Todo-Session per hours---------------------------------------------
         col1 = st.columns(1)[0]
-
         with col1:
             add_tooltip_css()
             tooltip_html = render_tooltip(
@@ -789,8 +769,8 @@ def show_cj_page():
             else:
                 st.title("Total Sessions by Hour of the Day")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">Total Sessions by Hour of the Day No Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">Total Sessions by Hour of the Day No Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -860,8 +840,8 @@ def show_cj_page():
         elif view == 'Sessions per Day':
             st.title("Sessions per Day")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Sessions per Day No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Sessions per Day No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -882,8 +862,8 @@ def show_cj_page():
         elif view == 'Sessions per Month':
             st.title("Sessions per Month")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Sessions per Month No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Sessions per Month No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
         # Sessions per Quarter
@@ -901,8 +881,8 @@ def show_cj_page():
         elif view == 'Sessions per Quarter':
             st.title("Sessions per Quarter")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Sessions per Quarter No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Sessions per Quarter No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -921,8 +901,8 @@ def show_cj_page():
         elif view == 'Sessions per Year':
             st.title("Sessions per Year")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Sessions per Year No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Sessions per Year No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -972,8 +952,8 @@ def show_cj_page():
             else:
                 st.title("Session Duration")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
         # Column 2: Average Session Duration
@@ -996,8 +976,8 @@ def show_cj_page():
             else:
                 st.title("Average Duration")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
         # Column 3: Average Number of Sessions Per Customer
@@ -1020,8 +1000,8 @@ def show_cj_page():
             else:
                 st.title("Each Customer")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
         # Todo- List of TOP 10 customer on pages with time spent in each Events
@@ -1048,8 +1028,8 @@ def show_cj_page():
             # If no data is available, show title and message
             st.title("Top 10 Customer IP List Data")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No Customer Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No Customer Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1100,8 +1080,8 @@ def show_cj_page():
         else:
             st.title("Maximum Sessions per Customer IP")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No Session Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No Session Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
         # Todo-Most viewed product and collections logic (same as your current code)
@@ -1159,8 +1139,8 @@ def show_cj_page():
             with chart_col1:
                 st.title("Most Popular Products by Unique Visitors")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Product Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Product Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1209,8 +1189,8 @@ def show_cj_page():
             with chart_col2:
                 st.title("Most Popular Collections by Unique Visitors")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Collection Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Collection Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1235,8 +1215,8 @@ def show_cj_page():
             else:
                 st.title("Most Searched Terms")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Search Term Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Search Term Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
         with chart_col2:
@@ -1289,8 +1269,8 @@ def show_cj_page():
             else:
                 st.title("Most Added Products to Cart")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Cart Add Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Cart Add Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1326,8 +1306,8 @@ def show_cj_page():
         else:
             st.title("Total Added to Cart Products")
             st.markdown(""" 
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No Cart Add Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No Cart Add Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1386,16 +1366,16 @@ def show_cj_page():
             with col1:
                 st.title("Average Time Spent on Each Event")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Event Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Event Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
             with col2:
                 st.title("Total Time Spent on Each Event")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Event Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Event Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
         # Todo-Time_Spend on Each Product ID with Product Name------------------------------------------
@@ -1427,8 +1407,8 @@ def show_cj_page():
             else:
                 st.title("Summary of Total Time Spent Per Product")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Product Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Product Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1453,8 +1433,8 @@ def show_cj_page():
             else:
                 st.title("Summary of Total Time Spent Per Collections")
                 st.markdown(""" 
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Collection Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Collection Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1501,8 +1481,8 @@ def show_cj_page():
         else:
             st.title("Total Viewers on Each Page")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Total Viewers on Each Page - No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Total Viewers on Each Page - No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1528,7 +1508,7 @@ def show_cj_page():
                     "This section calculates the bounce rate, which is the percentage of customers who spend less than 30 seconds on the page. It compares the total number of unique customers to those with a time on page under 30 seconds, displaying the result as a percentage."
                 )
                 st.markdown(
-                    f"<h1 style='display: inline-block;'>Customers Rate Under 30 Seconds {tooltip_html}</h1>",
+                    f"<h1 style='display: inline-block;'>Customers Rate Under 30 Sec{tooltip_html}</h1>",
                     unsafe_allow_html=True)
                 st.markdown(
                     f"""
@@ -1542,11 +1522,10 @@ def show_cj_page():
         else:
             st.title("Customers Rate Under 30 Seconds")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Customers Rate Under 30 Seconds - No Data Available</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Customers Rate Under 30 Seconds - No Data Available</h3>
                 </div>
             """, unsafe_allow_html=True)
-
 
         #Todo-Bounce Rate(%) by Event Type-------------------------------------------
         events = ['Cart', 'Home', 'Product', 'Collection']
@@ -1605,8 +1584,8 @@ def show_cj_page():
             with chart_col2:
                 st.title("Bounce Rate(%) by Event Type")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">Bounce Rate(%) by Event Type - No Data Available</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">Bounce Rate(%) by Event Type - No Data Available</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -1636,8 +1615,8 @@ def show_order_data_page():
             else:
                 st.title("Total orders placed")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for unique orders placed.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for unique orders placed.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             # Customer Order Data Section
@@ -1651,8 +1630,8 @@ def show_order_data_page():
             else:
                 st.title("Preview of customer order data filtered by the selected date range")
                 st.markdown("""
-                                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                                    <h3 style="font-size: 30px; color: black; font-weight: bold;">Data Frame is empty</h3>
+                                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                                    <h3 style="font-size: 30px; color: white; font-weight: bold;">Data Frame is empty</h3>
                                 </div>
                             """, unsafe_allow_html=True)
 
@@ -1691,23 +1670,23 @@ def show_order_data_page():
                 # Display the results
                 col1 = st.columns(1)[0]
                 with col1:
-                    st.write(f"Weekday Count: {weekday_count} ({(weekday_count / sum(counts)) * 100:.2f}%)")
-                    st.write(f"Weekend Count: {weekend_count} ({(weekend_count / sum(counts)) * 100:.2f}%)")
+                    # st.write(f"Weekday Count: {weekday_count} ({(weekday_count / sum(counts)) * 100:.2f}%)")
+                    # st.write(f"Weekend Count: {weekend_count} ({(weekend_count / sum(counts)) * 100:.2f}%)")
                     st.markdown("<h3 style='text-align: center;'>Orders by Weekday/Weekend</h3>",
                                 unsafe_allow_html=True)
                     st.altair_chart(pie_chart, use_container_width=True)
             else:
                 st.title("Orders by Weekday/Weekend")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Weekday vs Weekend analysis.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Weekday vs Weekend analysis.</h3>
                     </div>
                 """, unsafe_allow_html=True)
         except:
             st.title("Orders by Weekday/Weekend")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Weekday vs Weekend analysis.</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Weekday vs Weekend analysis.</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1748,14 +1727,14 @@ def show_order_data_page():
             else:
                 st.title("Orders by Day of the Week")
                 st.markdown("""
-                               <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                                   <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Days of the Week analysis.</h3>
+                               <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                                   <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Days of the Week analysis.</h3>
                                </div>
                            """, unsafe_allow_html=True)
         except:
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Days of the Week analysis.</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Days of the Week analysis.</h3>
                 </div>
             """, unsafe_allow_html=True)
         # Todo-Total Orders Placed: Hours of the Day-----------------------
@@ -1804,15 +1783,15 @@ def show_order_data_page():
                 else:
                     st.title("Total Orders Placed: Hours of the Day")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Hours of the Day analysis.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Hours of the Day analysis.</h3>
                         </div>
                     """, unsafe_allow_html=True)
         else:
             st.title("Total Orders Placed: Hours of the Day")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Hours of the Day analysis.</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Hours of the Day analysis.</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1847,8 +1826,8 @@ def show_order_data_page():
 
                 if orders_per_day.empty or orders_per_month.empty or orders_per_quarter.empty or orders_per_year.empty:
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for Order Count Visualizations.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for Order Count Visualizations.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -1933,8 +1912,8 @@ def show_order_data_page():
         else:
             st.title("Total orders placed: day, month, quarter, year")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No data available for the Total orders placed: day, month, quarter, year</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No data available for the Total orders placed: day, month, quarter, year</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -1958,8 +1937,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Avg orders")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Average Orders per Customer.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Average Orders per Customer.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -1984,8 +1963,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Order Cancel")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Canceled Orders.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Canceled Orders.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -2009,8 +1988,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Max orders")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Most Orders by Customer.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Most Orders by Customer.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -2034,8 +2013,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Order Value")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Average Order Value.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Average Order Value.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -2057,29 +2036,29 @@ def show_order_data_page():
             with col1:
                 st.title("Avg orders")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Average Orders per Customer.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Average Orders per Customer.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             with col2:
                 st.title("Order Cancel")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Canceled Orders.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Canceled Orders.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             with col3:
                 st.title("Max orders")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Most Orders by Customer.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Most Orders by Customer.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             with col4:
                 st.title("Order Value")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Order Value by Customer.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Order Value by Customer.</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -2097,8 +2076,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Highest valued orders")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Highest Valued Orders.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Highest Valued Orders.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -2147,8 +2126,8 @@ def show_order_data_page():
                 if df_orders is not None and not df_orders.empty:
                     st.title("Least valued orders")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Least Valued Orders.</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Least Valued Orders.</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 else:
@@ -2194,15 +2173,15 @@ def show_order_data_page():
             with chart_col1:
                 st.title("Highest valued orders")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Highest Valued Orders.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Highest Valued Orders.</h3>
                     </div>
                 """, unsafe_allow_html=True)
             with chart_col2:
                 st.title("Least valued orders")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Least Valued Orders.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Least Valued Orders.</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -2253,8 +2232,8 @@ def show_order_data_page():
             else:
                 st.title("Total Orders by Referring Sites")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Orders by Referring Sites.</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Orders by Referring Sites.</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -2295,8 +2274,8 @@ def show_abandoned_checkouts_page():
                 with col1:
                     st.title("Abandoned Orders")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total number of abandoned orders</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total number of abandoned orders</h3>
                         </div>
                     """, unsafe_allow_html=True)
 
@@ -2317,111 +2296,96 @@ def show_abandoned_checkouts_page():
         else:
             st.title("Preview of Abandoned Checkouts data filtered by the selected date range")
             st.markdown("""
-                            <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                                <h3 style="font-size: 30px; color: black; font-weight: bold;">Data Frame is empty</h3>
+                            <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                                <h3 style="font-size: 30px; color: white; font-weight: bold;">Data Frame is empty</h3>
                             </div>
                         """, unsafe_allow_html=True)
         # Todo-Total Order placed on weekdays and weekend
-        try:
-            col1 = st.columns(1)[0]
-            if df_abandoned_checkouts is not None and not df_abandoned_checkouts.empty:
-                add_tooltip_css()
+
+        col1,col2 = st.columns(2)
+        if df_abandoned_checkouts is not None and not df_abandoned_checkouts.empty:
+            add_tooltip_css()
+            df_abandoned_checkouts_ = df_abandoned_checkouts.groupby('Order_ID').agg({'Order_Created_At': 'first'})
+            df_abandoned_checkouts_['Order_Created_At'] = pd.to_datetime(df_abandoned_checkouts_['Order_Created_At'],
+                                                                         errors='coerce', utc=True)
+            df_abandoned_checkouts_['Weekday_Weekend'] = df_abandoned_checkouts_['Order_Created_At'].dt.dayofweek.apply(
+                lambda x: 'Weekend' if x >= 5 else 'Weekday'
+            )
+            weekday_count = df_abandoned_checkouts_[df_abandoned_checkouts_['Weekday_Weekend'] == 'Weekday'].shape[0]
+            weekend_count = df_abandoned_checkouts_[df_abandoned_checkouts_['Weekday_Weekend'] == 'Weekend'].shape[0]
+            counts = [weekday_count, weekend_count]
+            labels = ['Weekday', 'Weekend']
+            pie_data = pd.DataFrame({
+                'Category': labels,
+                'Count': counts,
+                'Percentage': [(count / sum(counts)) * 100 for count in counts]  # Calculate percentage
+            })
+            pie_data['Label'] = pie_data['Percentage'].round(1).astype(str) + '%'
+            pie_chart = alt.Chart(pie_data).mark_arc().encode(
+                theta=alt.Theta(field="Count", type="quantitative"),
+                color=alt.Color(field="Category", type="nominal"),
+                tooltip=["Category", "Count", "Percentage"],  # Show both count and percentage in tooltip
+            )
+            with col1:
+                # st.write(f"Weekday Count: {weekday_count} ({(weekday_count / sum(counts)) * 100:.2f}%)")
+                # st.write(f"Weekend Count: {weekend_count} ({(weekend_count / sum(counts)) * 100:.2f}%)")
                 tooltip_html = render_tooltip(
                     "This pie chart shows the distribution of abandoned orders between weekdays and weekends. Hover over each segment to see the category (Weekday or Weekend), the total count of orders, and their percentage representation.")
                 st.markdown(
                     f"<h1 style='display: inline-block;'>Total Orders Abandoned: Weekday vs Weekend {tooltip_html}</h1>",
                     unsafe_allow_html=True
                 )
-                df_abandoned_checkouts_ = df_abandoned_checkouts.groupby('Order_ID').agg({'Order_Created_At': 'first'})
-                df_abandoned_checkouts_['Order_Created_At'] = pd.to_datetime(df_abandoned_checkouts_['Order_Created_At'],
-                                                                             errors='coerce', utc=True)
-                df_abandoned_checkouts_['Weekday_Weekend'] = df_abandoned_checkouts_['Order_Created_At'].dt.dayofweek.apply(
-                    lambda x: 'Weekend' if x >= 5 else 'Weekday'
+                st.altair_chart(pie_chart, use_container_width=True)
+        else:
+            with col1:
+                st.title("Orders abandoned by Weekday/Weekend")
+                st.markdown("""
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Orders abandoned by Weekday/Weekend</h3>
+                    </div>
+                """, unsafe_allow_html=True)
+        # Todo----------Total orders abandoned: days of week-------------------
+        if df_abandoned_checkouts is not None and not df_abandoned_checkouts.empty:
+            df_abandoned_checkouts_ = df_abandoned_checkouts.groupby('Order_ID').agg(
+                {'Order_Created_At': 'first'}).reset_index()
+            df_abandoned_checkouts_['Order_Created_At'] = pd.to_datetime(df_abandoned_checkouts_['Order_Created_At'],
+                                                                         errors='coerce', utc=True)
+            with col2:
+                df_abandoned_checkouts_['days_of_week'] = df_abandoned_checkouts_[
+                    'Order_Created_At'].dt.dayofweek.apply(
+                    lambda x: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][x]
                 )
-                weekday_count = df_abandoned_checkouts_[df_abandoned_checkouts_['Weekday_Weekend'] == 'Weekday'].shape[0]
-                weekend_count = df_abandoned_checkouts_[df_abandoned_checkouts_['Weekday_Weekend'] == 'Weekend'].shape[0]
-                counts = [weekday_count, weekend_count]
-                labels = ['Weekday', 'Weekend']
+                day_count = df_abandoned_checkouts_['days_of_week'].value_counts()
+                day_count = day_count.reindex(
+                    ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                    fill_value=0)
                 pie_data = pd.DataFrame({
-                    'Category': labels,
-                    'Count': counts,
-                    'Percentage': [(count / sum(counts)) * 100 for count in counts]  # Calculate percentage
+                    'Day': day_count.index,
+                    'Count': day_count.values
                 })
-                pie_data['Label'] = pie_data['Percentage'].round(1).astype(str) + '%'
                 pie_chart = alt.Chart(pie_data).mark_arc().encode(
                     theta=alt.Theta(field="Count", type="quantitative"),
-                    color=alt.Color(field="Category", type="nominal"),
-                    tooltip=["Category", "Count", "Percentage"],  # Show both count and percentage in tooltip
+                    color=alt.Color(field="Day", type="nominal",
+                                    sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
+                                          'Sunday']),
+                    tooltip=["Day:N", "Count:Q"]
                 )
-                with col1:
-                    st.write(f"Weekday Count: {weekday_count} ({(weekday_count / sum(counts)) * 100:.2f}%)")
-                    st.write(f"Weekend Count: {weekend_count} ({(weekend_count / sum(counts)) * 100:.2f}%)")
-                    st.markdown("<h3 style='text-align: center;'>Orders abandoned by Weekday/Weekend</h3>",
-                                unsafe_allow_html=True)
-                    st.altair_chart(pie_chart, use_container_width=True)
-            else:
-                with col1:
-                    st.title("Orders abandoned by Weekday/Weekend")
-                    st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Orders abandoned by Weekday/Weekend</h3>
-                        </div>
-                    """, unsafe_allow_html=True)
-        except:
-            st.markdown(
-                f"<h3 style='font-size: 30px; color: red; text-align: center;'><b>Datasets Currently is unavaialbe</b></h3>",
-                unsafe_allow_html=True)
-
-        # Todo----------Total orders abandoned: days of week-------------------
-        try:
-            col2 = st.columns(1)[0]
-            if df_abandoned_checkouts is not None and not df_abandoned_checkouts.empty:
-                df_abandoned_checkouts_ = df_abandoned_checkouts.groupby('Order_ID').agg(
-                    {'Order_Created_At': 'first'}).reset_index()
-                df_abandoned_checkouts_['Order_Created_At'] = pd.to_datetime(df_abandoned_checkouts_['Order_Created_At'],
-                                                                             errors='coerce', utc=True)
-                with col2:
-                    df_abandoned_checkouts_['days_of_week'] = df_abandoned_checkouts_[
-                        'Order_Created_At'].dt.dayofweek.apply(
-                        lambda x: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][x]
-                    )
-                    day_count = df_abandoned_checkouts_['days_of_week'].value_counts()
-                    day_count = day_count.reindex(
-                        ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                        fill_value=0)
-                    pie_data = pd.DataFrame({
-                        'Day': day_count.index,
-                        'Count': day_count.values
-                    })
-                    pie_chart = alt.Chart(pie_data).mark_arc().encode(
-                        theta=alt.Theta(field="Count", type="quantitative"),
-                        color=alt.Color(field="Day", type="nominal",
-                                        sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
-                                              'Sunday']),
-                        tooltip=["Day:N", "Count:Q"]
-                    )
-                    add_tooltip_css()
-                    tooltip_html = render_tooltip(
-                        "Hover over the chart segments to view the number of abandoned orders for each day of the week. The chart shows how orders are distributed across different weekdays, with each segment representing a specific day.")
-                    st.markdown(
-                        f"<h1 style='display: inline-block;'>Total orders abandoned: days of week {tooltip_html}</h1>",
-                        unsafe_allow_html=True
-                    )
-                    st.markdown("<h3 style='text-align: center;'>Orders abandoned by Day of the Week</h3>",
-                                unsafe_allow_html=True)
-                    st.altair_chart(pie_chart, use_container_width=True)
-            else:
-                with col2:
-                    st.title("Orders abandoned by Day of the Week")
-                    st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Orders abandoned by Day of the Week</h3>
-                        </div>
-                    """, unsafe_allow_html=True)
-        except:
-            st.markdown(
-                f"<h3 style='font-size: 30px; color: red; text-align: center;'><b>Datasets Currently is unavaialbe</b></h3>",
-                unsafe_allow_html=True)
+                add_tooltip_css()
+                tooltip_html = render_tooltip(
+                    "Hover over the chart segments to view the number of abandoned orders for each day of the week. The chart shows how orders are distributed across different weekdays, with each segment representing a specific day.")
+                st.markdown(
+                    f"<h1 style='display: inline-block;'>Total Orders Abandoned: Days of Week {tooltip_html}</h1>",
+                    unsafe_allow_html=True
+                )
+                st.altair_chart(pie_chart, use_container_width=True)
+        else:
+            with col2:
+                st.title("Orders abandoned by Day of the Week")
+                st.markdown("""
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Orders abandoned by Day of the Week</h3>
+                    </div>
+                """, unsafe_allow_html=True)
         # Todo- Total orders abandoned: hours of day
         try:
             col1 = st.columns(1)[0]
@@ -2474,8 +2438,8 @@ def show_abandoned_checkouts_page():
                 with col1:
                     st.title("Orders abandoned by Hour of the Day")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Orders abandoned by Hour of the Day</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Orders abandoned by Hour of the Day</h3>
                         </div>
                     """, unsafe_allow_html=True)
         except:
@@ -2646,8 +2610,8 @@ def show_abandoned_checkouts_page():
                 with col1:
                     st.title("Total orders abandoned: day, month, quarter, year")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total orders abandoned day, month, quarter, year</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total orders abandoned day, month, quarter, year</h3>
                         </div>
                     """, unsafe_allow_html=True)
 
@@ -2693,8 +2657,8 @@ def show_abandoned_checkouts_page():
             else:
                 st.title("Total Abandoned Orders by Referring Sites")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Abandoned Orders by Referring Sites</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Abandoned Orders by Referring Sites</h3>
                     </div>
                 """, unsafe_allow_html=True)
         except:
@@ -2755,15 +2719,15 @@ def show_products_page():
                 with col1:
                     st.title("Average Order")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for average products</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for average products</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 with col2:
                     st.title("Total products")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total products</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total products</h3>
                         </div>
                     """, unsafe_allow_html=True)
         except:
@@ -2781,8 +2745,8 @@ def show_products_page():
         else:
             st.title("Preview of product data filtered by the selected date range")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Products</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Products</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -2873,16 +2837,16 @@ def show_products_page():
                     else:
                         st.title("Most Sold Products")
                         st.markdown("""
-                            <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                                <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Most Sold Products</h3>
+                            <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                                <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Most Sold Products</h3>
                             </div>
                         """, unsafe_allow_html=True)
             else:
                 with col1:
                     st.title("Product Count by Type")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Product Count by Type</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Product Count by Type</h3>
                         </div>
                     """, unsafe_allow_html=True)
         except:
@@ -2985,15 +2949,15 @@ def show_products_page():
                 with col1:
                     st.title("Most Priced Products ")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Most Priced Products </h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Most Priced Products </h3>
                         </div>
                     """, unsafe_allow_html=True)
                 with col2:
                     st.title("Least Priced Products")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Least Priced Products</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Least Priced Products</h3>
                         </div>
                     """, unsafe_allow_html=True)
         except:
@@ -3028,8 +2992,8 @@ def show_products_page():
             else:
                 st.title("Unsold Products Summary")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Unsold Products Summary</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Unsold Products Summary</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -3102,8 +3066,8 @@ def show_products_page():
             else:
                 st.title("Count of Products in Each Price Range")
                 st.markdown("""
-                    <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                        <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Count of Products in Each Price Range</h3>
+                    <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                        <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Count of Products in Each Price Range</h3>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -3184,22 +3148,22 @@ def show_revenue_page():
                 with col1:
                     st.title("Total revenue")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total revenue</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total revenue</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 with col2:
                     st.title("Average Revenue")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Average Revenue</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Average Revenue</h3>
                         </div>
                     """, unsafe_allow_html=True)
                 with col3:
                     st.title("Amount Refund")
                     st.markdown("""
-                        <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                            <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Amount Refund</h3>
+                        <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                            <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Amount Refund</h3>
                         </div>
                     """, unsafe_allow_html=True)
         except:
@@ -3217,8 +3181,8 @@ def show_revenue_page():
         else:
             st.title("Preview of revenue data filtered by the selected date range.")
             st.markdown("""
-                <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                    <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Preview Filtered Revenue Data</h3>
+                <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                    <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Preview Filtered Revenue Data</h3>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -3269,8 +3233,8 @@ def show_revenue_page():
             else:
                 st.title("Total Revenue Placed: Weekday vs Weekend")
                 st.markdown("""
-                       <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                           <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Revenue Placed: Weekday vs Weekend</h3>
+                       <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                           <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Revenue Placed: Weekday vs Weekend</h3>
                        </div>
                    """, unsafe_allow_html=True)
         except:
@@ -3313,8 +3277,8 @@ def show_revenue_page():
             else:
                 st.title("Total Revenue Placed: Days of the Week")
                 st.markdown("""
-                       <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                           <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Revenue Placed: Days of the Week</h3>
+                       <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                           <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Revenue Placed: Days of the Week</h3>
                        </div>
                    """, unsafe_allow_html=True)
         except:
@@ -3361,8 +3325,8 @@ def show_revenue_page():
             else:
                 st.title("Total Revenue Placed: Hours of Day")
                 st.markdown("""
-                       <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                           <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Revenue Placed: Hours of Day</h3>
+                       <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                           <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Revenue Placed: Hours of Day</h3>
                        </div>
                    """, unsafe_allow_html=True)
 
@@ -3480,8 +3444,8 @@ def show_revenue_page():
             else:
                 st.title("Revenue Visualizations (Day,Month,Quarter,Year)")
                 st.markdown("""
-                       <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                           <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Revenue Visualizations (Day,Month,Quarter,Year)</h3>
+                       <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                           <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Revenue Visualizations (Day,Month,Quarter,Year)</h3>
                        </div>
                    """, unsafe_allow_html=True)
         except:
@@ -3537,8 +3501,8 @@ def show_revenue_page():
             else:
                 st.title("Order Refering site chart")
                 st.markdown("""
-                       <div style="border: 2px solid blue; padding: 20px; background-color: #87CEEB; border-radius: 10px; text-align: center;">
-                           <h3 style="font-size: 30px; color: black; font-weight: bold;">No Data Available for Total Revenue by Referring Sites</h3>
+                       <div style="border: 2px solid black; padding: 20px; background-color: #454545; border-radius: 10px; text-align: center;">
+                           <h3 style="font-size: 30px; color: white; font-weight: bold;">No Data Available for Total Revenue by Referring Sites</h3>
                        </div>
                    """, unsafe_allow_html=True)
 
