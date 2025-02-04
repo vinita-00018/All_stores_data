@@ -39,11 +39,11 @@ try:
         # subprocess.run(["git", "stash"], check=True)  # Uncomment this to use stashing
         # print("Changes stashed.")
 
-    # Pull the latest changes from the remote repository
-    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+    # Pull the latest changes from the remote repository (use 'master' instead of 'main' if necessary)
+    subprocess.run(["git", "pull", "--rebase", "origin", "master"], check=True)  # Use 'master' if needed
 
     # Push changes to the remote repository
-    subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
+    subprocess.run(["git", "push", "-u", "origin", "master"], check=True)  # Use 'master' if needed
 
     print("Folder has been successfully pushed to GitHub!")
 
